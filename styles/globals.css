@@ -16,10 +16,14 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1400px) {
+  .main-container {
+    max-width: 1300px;
+    width: 100%;
+  }
+}
 .main-container {
-  max-width: 1300px;
   width: 100%;
-  padding: 0 30px;
 }
 
 @layer components {
@@ -31,9 +35,6 @@ body {
     @apply absolute w-auto py-2 top-8  border-[1px] border-[rgba(0,0,0,0.15)] hidden bg-white rounded text-[#212529];
   }
   .nav_li-link {
-    @apply pl-7 py-1 hover:bg-gray-100 block pr-16;
+    @apply pl-7 py-1 hover:bg-gray-100 block pr-16 whitespace-nowrap;
   }
 }
-/* .nav_li{
-  display: flex;
-} */
