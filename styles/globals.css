@@ -26,6 +26,25 @@ body {
   width: 100%;
 }
 
+.style-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.style-scroll::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.backDrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+}
+
 @layer components {
   .nav_li {
     @apply cursor-pointer relative h-[30px] flex items-center;

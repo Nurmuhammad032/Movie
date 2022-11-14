@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Search } from "../..";
 
-const initialState: Search = {
+const initialState = {
   page: 1,
   searchQuery: "",
 };
@@ -16,6 +16,9 @@ const searchSlice = createSlice({
     setPage: (state, action) => {
       state.page = action.payload;
     },
+    fetchSearchData: (state, action) => {
+
+    }
   },
 });
 

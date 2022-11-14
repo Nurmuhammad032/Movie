@@ -5,8 +5,8 @@ import type { Links } from "../constants/link";
 import { getToken, createSessiodId, api } from "../app/auth/index";
 import { setUser } from "../app/slices/user";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../store";
 import { useEffect, useState } from "react";
+import { RootState } from "../rootReducer";
 
 interface AppProps {
   links: Links[];
@@ -75,7 +75,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full z-50 bg-darkBlue fixed top-0 left-0 right-0 h-16 flex items-center justify-center">
+    <nav className="w-full z-[500] bg-darkBlue fixed top-0 left-0 right-0 h-16 flex items-center justify-center">
       <div className="main-container px-8 flex items-center text-white justify-between">
         <div className="flex space-x-5 items-center">
           <div>

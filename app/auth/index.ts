@@ -29,8 +29,6 @@ export const getToken = async () => {
   }
 };
 
-
-
 export const createSessiodId = async () => {
   const token = localStorage.getItem("request_token");
 
